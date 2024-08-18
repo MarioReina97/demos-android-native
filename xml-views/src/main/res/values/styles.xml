@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LabelMedium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="LabelMedium.SemiBold">
+        <item name="fontFamily">@font/source_sans_pro_semi_bold</item>
+    </style>
+
+    <style name="LabelMediumPlus">
+        <item name="android:textSize">@dimen/text_size_medium_plus</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="LabelMediumPlus.SemiBold">
+        <item name="fontFamily">@font/source_sans_pro_semi_bold</item>
+    </style>
+    <style name="LabelBig">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="BtAction" parent="LabelMedium.SemiBold">
+        <item name="backgroundTint">@color/main_700</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

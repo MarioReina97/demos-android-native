@@ -1,0 +1,27 @@
+<resources>
+    <!-- text size -->
+    <dimen name="text_size_very_small">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_small_standard">14sp</dimen>
+    <dimen name="text_size_standard">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_toolbar">20sp</dimen>
+    <dimen name="text_size_medium_plus">21sp</dimen>
+    <dimen name="text_size_quite_big">24sp</dimen>
+    <dimen name="text_size_big_home_page">28sp</dimen>
+    <dimen name="text_size_big">32sp</dimen>
+
+    <!-- size -->
+    <dimen name="size16">32dp</dimen>
+    <dimen name="size28">56dp</dimen>
+    <dimen name="size50">100dp</dimen>
+
+    <!-- margin -->
+    <dimen name="margin5">10dp</dimen>
+    <dimen name="margin2">4dp</dimen>
+    <dimen name="margin30">60dp</dimen>
+
+    <!-- padding -->
+    <dimen name="padding10">20dp</dimen>
+    <dimen name="padding20">40dp</dimen>
+</resources>

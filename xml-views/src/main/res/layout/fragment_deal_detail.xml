@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding10">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBarLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imgIcon"
+        app:layout_constraintEnd_toEndOf="@+id/imgIcon"
+        app:layout_constraintStart_toStartOf="@+id/imgIcon"
+        app:layout_constraintTop_toTopOf="@+id/imgIcon" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/LabelMedium.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgIcon"
+        tools:text="aaaaa" />
+
+    <TextView
+        android:id="@+id/txtDiscountPrice"
+        style="@style/LabelMediumPlus.SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        tools:text="239" />
+
+    <TextView
+        android:id="@+id/txtOriginalPrice"
+        style="@style/LabelMediumPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin2"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDiscountPrice"
+        app:layout_constraintStart_toEndOf="@+id/txtDiscountPrice"
+        app:layout_constraintTop_toTopOf="@+id/txtDiscountPrice"
+        tools:text="239" />
+
+    <TextView
+        android:id="@+id/labelReleaseDate"
+        style="@style/LabelMediumPlus.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="@string/release_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiscountPrice" />
+
+    <TextView
+        android:id="@+id/txtReleaseDate"
+        style="@style/LabelMedium.SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelReleaseDate" />
+
+
+    <TextView
+        android:id="@+id/labelReviews"
+        style="@style/LabelMediumPlus.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="@string/reviews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReleaseDate" />
+
+    <TextView
+        android:id="@+id/labelSteam"
+        style="@style/LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
+        android:text="@string/steam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelReviews" />
+
+    <TextView
+        android:id="@+id/txtSteam"
+        style="@style/LabelMedium.SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin2"
+        app:layout_constraintBottom_toBottomOf="@+id/labelSteam"
+        app:layout_constraintStart_toEndOf="@id/labelSteam"
+        app:layout_constraintTop_toTopOf="@+id/labelSteam" />
+
+    <TextView
+        android:id="@+id/labelMetacritics"
+        style="@style/LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
+        android:text="@string/metacritic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelSteam" />
+
+    <TextView
+        android:id="@+id/txtMetacritics"
+        style="@style/LabelMedium.SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/labelMetacritics"
+        app:layout_constraintStart_toEndOf="@id/labelMetacritics"
+        app:layout_constraintTop_toTopOf="@+id/labelMetacritics" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btDeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BtAction"
+        android:text="@string/vai_all_offerta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

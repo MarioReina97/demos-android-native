@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_deals">
+
+    <fragment
+        android:id="@+id/nav_deals"
+        android:name="it.marioreina.demoviews.deal.DealFragment"
+        tools:layout="@layout/fragment_deal" />
+
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="it.marioreina.demoviews.wishlist.WishlistFragment"
+        tools:layout="@layout/fragment_wishlist" />
+
+    <fragment
+        android:id="@+id/nav_deal_detail"
+        android:name="it.marioreina.demoviews.deal.DealDetailFragment"
+        tools:layout="@layout/fragment_deal_detail"/>
+
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="it.marioreina.demoviews.credits.CreditsFragment"
+        tools:layout="@layout/fragment_credits" />
+</navigation>
