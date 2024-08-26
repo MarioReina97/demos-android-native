@@ -2,19 +2,21 @@
 
 Questo progetto è stato realizzato esclusivamente a scopo dimostrativo, con l'obiettivo di fornire un esempio di come strutturerei un'applicazione utilizzando il pattern **MVVM** (Model-View-ViewModel) e applicando i principi della **Clean Architecture**. L'intento è mostrare un'architettura ben organizzata e mantenibile, che favorisca la separazione delle responsabilità e la testabilità del codice.
 
-## Struttra
+## Moduli Presentation/App
+
+All'interno di questo progetto ci sono tre moduli "app" creati utilizzando diversi tipi di approccio alla creazione delle UI
 
 ### XML views
 
-Presentation layer creato utilizzando il XML views
+Utilizza file XML, Activity, Fragment e viewbinding per collegare la grafica alle componenti di logica
 
-### Domain
+### XML - Compose
 
-Business logic layer, contiene le entity finali, gli usecase che si occupano di business logic e fare da ponte tra presentation <-> data.
+Mantiene Activity e Fragment di **XML views** ma il dettaglio delle schermata è scritto in compose
 
-### Data
+### Compose
 
-Data layer, si occupa della gestione del recupero e della persistenza dei dati
+Scritto interamente in compose
 
 ## Credits e Ringraziamenti
 
@@ -38,19 +40,21 @@ Questo progetto non sarebbe stato possibile senza il contributo di queste fantas
 
 This project was created solely for demonstration purposes, with the goal of providing an example of how I would structure an application using the **MVVM** (Model-View-ViewModel) pattern and applying the principles of **Clean Architecture**. The intent is to showcase a well-organized and maintainable architecture that promotes separation of concerns and code testability.
 
-## Structure
+## Presentation/App Modules
+
+This project contains three "app" modules created using different approaches to UI development.
 
 ### XML Views
 
-Presentation layer created using XML views.
+Uses XML files, Activity, Fragment, and viewbinding to connect the UI with the logic components.
 
-### Domain
+### XML - Compose
 
-Business logic layer that contains the core entities, the use cases responsible for business logic, and acts as a bridge between presentation <-> data.
+Keeps the Activity and Fragment from **XML Views**, but the screen details are written in Compose.
 
-### Data
+### Compose
 
-Data layer responsible for managing data retrieval and persistence.
+Written entirely in Compose.
 
 ## Credits and Acknowledgments
 
@@ -67,4 +71,3 @@ Thanks to [wereDevelopers](https://github.com/wereDevelopers) for creating and m
 ---
 
 This project would not have been possible without the contribution of these fantastic resources. Thank you!
-
