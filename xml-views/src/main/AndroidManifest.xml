@@ -16,7 +16,6 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.DemoViews"
-            android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
