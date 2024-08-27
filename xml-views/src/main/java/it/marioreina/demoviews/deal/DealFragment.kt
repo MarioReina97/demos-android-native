@@ -10,6 +10,7 @@ import it.marioreina.demoviews.HomeActivity
 import it.marioreina.demoviews.R
 import it.marioreina.demoviews.base.BaseFragment
 import it.marioreina.demoviews.databinding.FragmentDealBinding
+import it.marioreina.demoviews.firstaccess.FirstAccessDialog
 import it.marioreina.demoviews.utils.DealConst
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -31,6 +32,7 @@ class DealFragment : BaseFragment(R.layout.fragment_deal) {
         super.onViewCreated(view, savedInstanceState)
         initView()
         initObserver()
+        dealViewModel.isFirstAccess()
         dealViewModel.getDeals()
     }
 
@@ -46,11 +48,26 @@ class DealFragment : BaseFragment(R.layout.fragment_deal) {
 
     private fun initObserver() {
         dealViewModel.dealEntityListLiveData.observeWithResource(this) {
-            dealAdapter.submitList(it)
+            if(it != null) {
+                dealAdapter.submitList(it)
+            }
+        }
+        dealViewModel.isFirstAccessLiveData.observeWithResource(this) {
+            if(it != null) {
+                if(!it) {
+                    FirstAccessDialog().show(this.parentFragmentManager, null)
+                }
+            }
         }
     }
 
     override fun onLoading(isLoading: Boolean) {
         binding.progressBar.isVisible = isLoading
+    }
+
+    override fun onPause() {
+        super.onPause()
+        dealViewModel.dealEntityListLiveData.value = null
+        dealViewModel.isFirstAccessLiveData.value = null
     }
 }

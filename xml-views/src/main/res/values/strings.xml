@@ -1,14 +1,15 @@
 <resources>
     <string name="app_name">Demo Android Native</string>
+    <string name="firt_access_message">This project was created solely for demonstration purposes, with the goal of providing an example of how I would structure an application using the MVVM (Model-View-ViewModel) pattern and applying the principles of Clean Architecture. The intent is to showcase a well-organized and maintainable architecture that promotes separation of concerns and code testability.\n\nI know the graphics could be better… but that\'s not the goal of the project</string>
+    <string name="deals">Deals</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="credits_title">Credits</string>
     <string name="reviews">Reviews</string>
     <string name="steam">Steam:</string>
     <string name="metacritic">Metacritics:</string>
     <string name="release_date">Release date</string>
-    <string name="deals">Deals</string>
     <string name="go_to_deal">Go to deal</string>
     <string name="work_in_progress">WORK IN PROGRESS\nSorry for the inconvenience</string>
-    <string name="wishlist">Wishlist</string>
-    <string name="credits_title">Credits</string>
     <string name="credits_message"><![CDATA[
     <p>I would like to express my gratitude for the support provided by the resources and APIs that made the development of this project possible.</p>
 
@@ -19,7 +20,10 @@
     <h3>wereDevelopers Libraries</h3>
 
     <p>Thanks to <a href="https://github.com/wereDevelopers">wereDevelopers</a> for creating and maintaining the libraries used in this project. Their open-source contribution was fundamental to the success of this work.</p>
+    <br><br>
+    <p>Source code: <a href="https://github.com/MarioReina97/demos-android-native">GitHub</a></p>
 ]]></string>
+
 
 
 

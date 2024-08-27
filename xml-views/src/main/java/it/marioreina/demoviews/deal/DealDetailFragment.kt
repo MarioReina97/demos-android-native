@@ -21,7 +21,6 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-
 class DealDetailFragment: BaseFragment(R.layout.fragment_deal_detail) {
 
     private val binding by viewBinding(FragmentDealDetailBinding::bind)
@@ -89,5 +88,10 @@ class DealDetailFragment: BaseFragment(R.layout.fragment_deal_detail) {
         (requireActivity() as HomeActivity).hideBottomNavBar()
         setBackButton(R.drawable.ic_back)
         setToolbarTitle("")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        dealViewModel.dealDetailEntityLiveData.value = null
     }
 }

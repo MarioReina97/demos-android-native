@@ -12,6 +12,7 @@
     <dimen name="text_size_big">32sp</dimen>
 
     <!-- size -->
+    <dimen name="size14">28dp</dimen>
     <dimen name="size16">32dp</dimen>
     <dimen name="size28">56dp</dimen>
     <dimen name="size50">100dp</dimen>

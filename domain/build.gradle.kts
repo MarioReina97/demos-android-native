@@ -9,6 +9,9 @@ android {
     }
     namespace = "it.marioreina.demoviews.domain"
     compileSdk = libs.versions.compileSdk.get().toInt()
+    defaultConfig {
+        minSdk = libs.versions.minSdk.get().toInt()
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.valueOf(libs.versions.javaVersion.get())

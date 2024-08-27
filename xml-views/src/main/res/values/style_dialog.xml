@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/main_700</item>
+        <item name="colorPrimary">@color/main_500</item>
+        <item name="colorAccent">@color/main_500</item>
+    </style>
+
+    <style name="BaseDialog.FullScreenDialog">
+        <item name="android:windowNoTitle">true</item>
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowBackground">
+            @android:drawable/screen_background_light_transparent
+        </item>
+    </style>
+</resources>
